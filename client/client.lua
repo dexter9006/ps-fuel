@@ -326,7 +326,7 @@ RegisterNetEvent('ps-fuel:client:refuelCan', function(paymentMethod)
 			RequestAnimDict("weapon@w_sp_jerrycan")
 			while not HasAnimDictLoaded('weapon@w_sp_jerrycan') do Wait(100) end
 			TaskPlayAnim(ped, "weapon@w_sp_jerrycan", "fire", 8.0, 1.0, -1, 1, 0, 0, 0, 0 )
-			QBCore.Functions.Progressbar("refuel-car", "Refueling", 10000, false, true, {
+			QBCore.Functions.Progressbar("refuel-car", "Ravitaillement en cours ..", 10000, false, true, {
 				disableMovement = true,
 				disableCarMovement = true,
 				disableMouse = false,
