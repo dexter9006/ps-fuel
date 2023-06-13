@@ -28,11 +28,11 @@ function CreateBlip(coords)
 	local blip = AddBlipForCoord(coords)
 	SetBlipSprite(blip, 361)
 	SetBlipScale(blip, 0.6)
-	SetBlipColour(blip, 4)
+	SetBlipColour(blip, 1)
 	SetBlipDisplay(blip, 4)
 	SetBlipAsShortRange(blip, true)
 	BeginTextCommandSetBlipName("STRING")
-	AddTextComponentString("Gas Station")
+	AddTextComponentString("Station Essence")
 	EndTextCommandSetBlipName(blip)
 	return blip
 end
