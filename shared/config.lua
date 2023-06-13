@@ -1,13 +1,13 @@
 Config = {}
-Config.ShowNearestGasStationOnly = true -- show nearest gas stations when close enough. If set to false, will show all blips for all gas stations.
+Config.ShowNearestGasStationOnly = false -- show nearest gas stations when close enough. If set to false, will show all blips for all gas stations.
 Config.LeaveEngineRunning = true -- when set to true vehicle engine will run upon exiting vehicle
 Config.VehicleBlowUp = true -- when set to true vehicle has a chance to blow up if engine is left running
 Config.BlowUpChance = 5 -- percentage for chance of engine explosion
 Config.RefillCost = 100 -- default price
-Config.CostMultiplier = 3.0 -- tax basically
-Config.canCost = 400 -- buy jerry can price
-Config.refuelCost = 600 -- refueling jerry can price
-Config.GlobalTax = 15.0
+Config.CostMultiplier = 2.0 -- tax basically
+Config.canCost = 100 -- buy jerry can price
+Config.refuelCost = 200 -- refueling jerry can price
+Config.GlobalTax = 10.0 -- % tax
 
 Config.fuelPrice = 2.0 -- fuel price in litres I guess
 
@@ -47,28 +47,28 @@ Config.Blacklist = {
 
 -- Class multipliers. If you want SUVs to use less fuel, you can change it to anything under 1.0, and vise versa.
 Config.Classes = {
-	[0] = 1.0, -- Compacts
+	[0] = 0.9, -- Compacts
 	[1] = 1.0, -- Sedans
-	[2] = 1.0, -- SUVs
+	[2] = 1.1, -- SUVs
 	[3] = 1.0, -- Coupes
-	[4] = 1.0, -- Muscle
+	[4] = 1.1, -- Muscle
 	[5] = 1.0, -- Sports Classics
-	[6] = 1.0, -- Sports
-	[7] = 1.0, -- Super
-	[8] = 1.0, -- Motorcycles
-	[9] = 1.0, -- Off-road
+	[6] = 1.1, -- Sports
+	[7] = 1.3, -- Super
+	[8] = 0.8, -- Motorcycles
+	[9] = 1.2, -- Off-road
 	[10] = 1.0, -- Industrial
 	[11] = 1.0, -- Utility
 	[12] = 1.0, -- Vans
 	[13] = 0.0, -- Cycles
-	[14] = 1.0, -- Boats
-	[15] = 1.0, -- Helicopters
-	[16] = 1.0, -- Planes
+	[14] = 0.8, -- Boats
+	[15] = 0.8, -- Helicopters
+	[16] = 0.9, -- Planes
 	[17] = 1.0, -- Service
 	[18] = 1.0, -- Emergency
 	[19] = 1.0, -- Military
 	[20] = 1.0, -- Commercial
-	[21] = 1.0, -- Trains
+	[21] = 0.5, -- Trains
 }
 
 -- The left part is at percentage RPM, and the right is how much fuel (divided by 10) you want to remove from the tank every second
